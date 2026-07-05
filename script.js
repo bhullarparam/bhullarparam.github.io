@@ -1,4 +1,4 @@
-// Dark Mode Toggle
+// Dark Mode
 const themeToggle = document.getElementById('theme-toggle');
 const body = document.body;
 
@@ -19,12 +19,12 @@ themeToggle.addEventListener('click', () => {
   }
 });
 
-// Contact Form Success Message
+// Contact Form
 const form = document.getElementById('contact-form');
-form.addEventListener('submit', (e) => {
-  // Formspree will handle submission
+
+form.addEventListener('submit', function() {
   setTimeout(() => {
-    alert('✅ Thank you! Your message has been sent.');
+    alert('✅ Thank you Bhullar Param! Your message has been sent successfully.');
     form.reset();
-  }, 500);
+  }, 800);
 });

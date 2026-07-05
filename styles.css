@@ -1,9 +1,13 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
 
 body.light {
@@ -16,61 +20,148 @@ body.dark {
   color: #e2e8f0;
 }
 
-/* Rest of the styles (same as before with improvements) */
+/* Navigation */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 5%;
-  background: rgba(255,255,255,0.95);
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 1.5rem 8%;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
 }
 
 body.dark nav {
   background: rgba(15, 23, 42, 0.95);
 }
 
+.nav-links a {
+  margin-left: 1.8rem;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+}
+
 .theme-btn {
   background: none;
   border: none;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   cursor: pointer;
+  padding: 8px;
 }
 
-.btn, .btn-small {
-  padding: 12px 28px;
+/* Hero */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 10%;
+}
+
+.highlight {
+  color: #007bff;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
   background: #007bff;
   color: white;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
   text-decoration: none;
-  font-weight: 600;
+  border-radius: 50px;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: 0.3s;
 }
 
-.project-card, .skill {
-  transition: all 0.3s ease;
+.btn:hover {
+  background: #0056b3;
+  transform: translateY(-3px);
 }
 
-body.dark .project-card,
+/* Sections */
+.section {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.8rem;
+  margin-bottom: 3rem;
+}
+
+/* Projects & Skills */
+.projects-grid, .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+body.dark .project-card {
+  background: #1e2937;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.tags span {
+  background: #e3f2fd;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-right: 8px;
+}
+
+.skill {
+  background: white;
+  padding: 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  font-weight: 500;
+}
+
 body.dark .skill {
   background: #1e2937;
 }
 
+/* Contact Form */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 form input, form textarea {
   width: 100%;
-  padding: 12px;
-  margin: 10px 0;
+  padding: 14px;
+  margin: 12px 0;
   border: 1px solid #ccc;
   border-radius: 8px;
+  font-size: 1rem;
 }
 
 body.dark form input,
 body.dark form textarea {
   background: #334155;
   border-color: #475569;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 2.5rem;
+  background: #1e2937;
   color: white;
 }
