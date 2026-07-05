@@ -6,7 +6,7 @@ Modern and clean personal portfolio website built with HTML, CSS, and JavaScript
 - Fully Responsive Design
 - Clean & Professional UI
 - Smooth Scrolling Navigation
-- Mobile Friendly
+- Mobile Friendly.
 
 ## Live Demo
 Visit: `https://bhullarparam.github.io`
@@ -18,6 +18,6 @@ Visit: `https://bhullarparam.github.io`
 ## Tech Stack
 - HTML5
 - CSS3
-- Vanilla JavaScript
+- Vanilla JavaScript.
 
 Made with ❤️ for showcasing my work to clients.
