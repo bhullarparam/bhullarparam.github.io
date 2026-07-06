@@ -9,7 +9,7 @@ Modern and clean personal portfolio website built with HTML, CSS, and JavaScript
 - Mobile Friendly.
 
 ## Live Demo
-Visit: `https://bhullarparam.github.io`
+Visit: https://bhullarparam.github.io`
 
 ## How to Run Locally
 1. Clone the repo
